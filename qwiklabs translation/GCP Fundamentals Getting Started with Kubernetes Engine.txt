@@ -1,0 +1,40 @@
+LAB GCP Fundamentals: Getting Started with Kubernetes Engine 
+
+
+###Provision a Kubernetes cluster using Kubernetes Engine.
+
+
+#gcloud auth login [ACCOUNT] [--no-activate] [--brief] [--enable-gdrive-access] [--force] [--no-launch-browser] [--update-adc] [GCLOUD_WIDE_FLAG …]
+
+#gcloud config set project project-id
+
+#gcloud service list  --available  --filter='NAME:container*'
+
+If not available then enable:
+#gcloud service enable container.googleapis.com
+
+#export MY_ZONE=
+
+#export MY_ZONE=us-central1-a
+
+#gcloud container clusters create webfrontend --zone $MY_ZONE --num-nodes 2
+
+
+###Deploy and manage Docker containers using kubectl.
+
+
+#kubectl version
+
+#kubectl create deploy nginx --image=nginx:1.17.10
+
+#kubectl get pods
+
+#kubectl expose deployment nginx --port 80 --type LoadBalancer
+
+#kubectl get services
+
+#kubectl scale deployment nginx --replicas 3
+
+#kubectl get pods
+
+#kubectl get services

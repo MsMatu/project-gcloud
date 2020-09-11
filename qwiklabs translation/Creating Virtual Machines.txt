@@ -1,0 +1,42 @@
+LAB: Google Cloud Fundamentals: Getting Started with App Engine
+
+
+###Initialize App Engine.
+###Preview an App Engine application running locally in Cloud Shell.
+###Deploy an App Engine application, so that others can reach it.
+###Disable an App Engine application, when you no longer want it to be visible.
+
+#gcloud auth login [ACCOUNT] [--no-activate] [--brief] [--enable-gdrive-access] [--force] [--no-launch-browser] [--update-adc] [GCLOUD_WIDE_FLAG …]
+
+#gcloud config set project project-id
+
+###Initialize App Engine.
+
+#gcloud app create --project=$DEVSHELL_PROJECT_ID
+
+#git clone https://github.com/GoogleCloudPlatform/python-docs-samples
+
+#cd python-docs-samples/appengine/standard_python3/hello_world
+
+###Preview an App Engine application running locally in Cloud Shell.
+
+#sudo apt-get update
+
+#sudo apt-get install virtualenv
+
+#source venv/bin/activate
+
+#python main.py
+
+###Deploy an App Engine application, so that others can reach it.
+
+cd ~/python-docs-samples/appengine/standard_python3/hello_world
+
+#gcloud app deploy
+
+#gcloud app browse
+
+
+###Disable an App Engine application, when you no longer want it to be visible.
+Command not found
+
